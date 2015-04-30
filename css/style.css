@@ -1,0 +1,436 @@
+/* Thomas Ly s3432552*/
+
+html, body{
+	margin:0;
+	padding:0;
+	height:100%;
+	
+	/*This pattern was freely sourced from http://lea.verou.me/css3patterns/ */
+	background:
+	linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-color: #131313;
+	background-size: 20px 20px;
+	
+}
+
+#container, #container2 {
+	position:relative;
+	min-height:100%;
+	
+	
+	
+}
+
+#heading{
+	
+	
+	background-color:black;
+	position:relative;
+	width:80%;
+	max-width:900px;
+	min-width:500px;
+	height: 130px;
+	margin: 0px auto;
+	text-align:center;
+	
+	border-width:3px;
+	border-style:solid;
+	border-color:#cccccc;
+	border-radius:10px;
+	
+}
+
+#heading h1{
+	position:absolute;
+	font-family: 'Lobster', cursive;
+	font-size:50px;
+	left:50%;
+	color:#d9d9d9;
+}
+
+#heading img{
+	position:absolute;
+	height:100px;
+	width:150px;
+	left:300px;
+	
+
+}
+
+.navigation {
+	height:60px;
+	width:80%;
+	max-width:900px;
+	min-width:900px;
+	margin:20px auto;
+	background-color:#819c9a;
+	
+	border-width:3px;
+	border-style:solid;
+	border-color:#cccccc;
+	border-radius:10px;
+	
+}
+
+.navigation ul{
+	margin:0px;
+	padding:0px;
+}
+
+.navigation ul li{
+	list-style:none;
+}
+
+.navigation ul li a{
+	text-decoration:none;
+	font-family: 'Anton', sans-serif;
+	font-size: 25px;
+	float:left;
+	display:block;
+	padding:12px 50px;
+	color:#ffffff;
+}
+
+.navigation ul li a:hover{
+	color:black;
+}
+
+
+
+
+
+#main{
+	width:900px;
+	margin:0px auto 0px;
+	
+	padding-bottom:50px;
+	
+	border-width:3px;
+	border-style:solid;
+	border-color:#cccccc;
+	border-radius:10px;
+	
+	background: -webkit-linear-gradient(left top, #25262a , #867c79);
+	background: -o-linear-gradient(bottom right, #25262a , #867c79); 
+	background: -moz-linear-gradient(bottom right, #25262a , #867c79);
+}
+
+#firsthead{
+	text-align:center;
+	font-family: 'Anton', sans-serif;
+	color:#e69700;
+	
+	margin:2px;
+}
+
+#sechead{
+	text-align:center;
+	font-family: 'Gloria Hallelujah', cursive;
+	margin:2px;
+	font-size:50px;
+	color:#cc0019;
+}
+
+.posters {
+	height:320px;
+	width:200px;
+	padding-top:30px;
+	padding-left:75px;
+}
+
+#content{
+	position:relative;
+	right:3px;
+	top:4px;
+	
+	width:900px;
+	margin:50px auto 0px;
+	
+	border-width:3px;
+	border-style:solid;
+	border-color:#cccccc;
+	border-top-color:#66bbf0;
+	border-top-width:8px;
+	background-color:#e3ddb5;
+}
+
+#info{
+	font-family: 'Ubuntu', sans-serif;
+	text-align:justify;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#info::first-letter{
+	font-size:200%;
+	
+}
+
+#footer{
+	position:fixed;
+	height:50px;
+	width:100%;
+	min-width:500px;
+	bottom:0;
+	left:0;
+	text-align:center;
+	font-size:20px;
+	color:black;
+	background-color:#819c9a;
+}
+
+#footer img{
+	position:relative;
+	top:8px;
+	border:0px;
+	height:35px;
+}
+
+/****************** Start of contact page CSS *********************/
+
+#form{
+	width:900px;
+	margin:20px auto;
+	position:relative;
+	
+	background: -webkit-linear-gradient(left top, #25262a , #867c79);
+	background: -o-linear-gradient(bottom right, #25262a , #867c79); 
+	background: -moz-linear-gradient(bottom right, #25262a , #867c79);
+	
+	border-width:3px;
+	border-style:solid;
+	border-radius:10px;
+	border-color:#cccccc;
+}
+
+#form form{
+	margin:10px auto 10px 10px;
+	color:white;
+	font-size:20px;
+}
+
+#emailbox{
+	width:297px;
+}
+
+#contactnote{
+	height:200px;
+	width:300px;
+	position:absolute;
+	left:520px;
+	bottom:85px;
+	
+	border-width:5px;
+	border-style:solid;
+	border-radius:10px;
+	border-color:#2e5c70;
+	background-color:#c1c49c;
+}
+
+#contactnote p{
+	text-align:justify;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:20px;
+	
+	padding-left:5px;
+	padding-right:5px;
+}
+
+/****************************** Movie Page CSS ***************************/
+
+#movieList{
+	width:80%;
+	max-width:900px;
+	min-width:480px;
+	margin:10px auto 60px;
+	
+	
+	border-width:3px;
+	border-style:solid;
+	border-color:#cccccc;
+	border-radius:10px;
+	
+	background:#85FF7C;
+}
+
+#movieList p{
+	text-align:left;
+	padding:5px;
+}
+
+#movieList a{
+	text-decoration:none;
+	color:#A6190F;
+}
+
+#movieList a:hover{
+	color:white;
+}
+
+.poster2{
+	height:320px;
+	width:200px;
+	padding-top:30px;
+	padding-left:40px;
+
+	position:relative;
+}
+
+#movie1, #movie2, #movie3, #movie4{
+	background:#497DD5;
+	margin:10px;
+	border-style:solid;
+	border-color:#702FB0;
+	
+}
+
+.guidance{
+	height:80px;
+	float:right;
+	padding-top:30px;
+}
+
+.movieTable{
+	border-style:solid;
+	border-color:black;
+	border-collapse:collapse;
+	
+	
+	margin-left:15px;
+	margin-top:5px;
+}
+
+.movieTable th{
+	padding:10px;
+}
+
+#movieList p{
+	color:black;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/**************************************Schedule Page CSS *****************************************/
+
+#scheduleTable{
+	max-width:900px;
+	min-width:470px;
+	margin:10px auto 60px;
+	
+	
+	
+	border-width:3px;
+	border-style:solid;
+	border-color:#cccccc;
+	border-radius:10px;
+	
+	background:#F6F6B9;
+}
+
+#scheduleTable h1{
+	text-align:center;
+	font-family: 'Gloria Hallelujah', cursive;
+	color:#114361;
+}
+#scheduleTable p{
+	text-align:center;
+	font-style:italic;
+}
+
+#maximaTable{
+	margin:10px 50px;
+	background:#D53131;
+}
+
+#rivolaTable{
+	margin:10px 50px;
+	background:pink;
+}
+
+#maximaTable table{
+	width:100%;
+	border-bottom-style:solid;
+}
+
+#rivolaTable table{
+	width:100%;
+	border-bottom-style:solid;
+}
+
+#maximaTable table, #maximaTable th{
+	border-style:solid;
+	border-collapse:collapse;
+	font-size:25px;
+}
+
+#rivolaTable table, #rivolaTable th{
+	border-style:solid;
+	border-collapse:collapse;
+	font-size:25px;
+}
+
+#maximaTable th, #maximaTable td{
+	padding:20px;
+	text-align:center;
+	border-left-style:solid;
+	border-right-style:solid;
+	
+}
+
+#rivolaTable th, #rivolaTable td{
+	padding:10px;
+}
+
+#rivolaTable th, #rivolaTable td{
+	padding:20px;
+	text-align:center;
+	border-right-style:solid;
+	border-left-style:solid;
+	
+}
+
+/***************************** Booking Page *******************************/
+
+#formDiv{
+	width:80%;
+	max-width:900px;
+	min-width:470px;
+	margin:10px auto 60px;
+	
+	
+	
+	border-width:3px;
+	border-style:solid;
+	border-color:#cccccc;
+	border-radius:10px;
+	
+	background:#322C2C;
+}
+
+#formDiv h1{
+	text-align:center;
+	color:#E3E7F6;
+	font-family: 'Anton', sans-serif;
+}
+
+#formInputs{
+	margin:20px;
+	font-size:25px;
+}
+
+#formInputs2{
+	margin:60px 20px 30px;
+	font-size:25px;
+}
+
+#bookButton {
+	margin:20px;
+}
+
+#formDiv td{
+	color:white;
+}

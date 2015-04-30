@@ -1,0 +1,170 @@
+<!-- Thomas Ly s3432552-->
+
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+	
+		<title> Spin Flicks </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+		
+		<script type="text/javascript" src="jscript.js"></script>
+	</head>
+	
+	<body>
+		
+	<div id="container">
+		<div id="heading">
+			<img src="images/logo.jpg" alt='logo' />
+			<h1>Spin Flicks</h1>
+		</div>
+			
+		<div class="navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="schedule.html">Pricing</a></li>
+				<li><a href="movies.html">Movies</a></li>
+				<li><a href="booking.html">Bookings</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		
+		<div id="formDiv">
+			<form id="bookingForm" action="http://titan.csit.rmit.edu.au/~e54061/wp/form-tester-2.php" method="post">
+				<h1>Movie Booking</h1>
+				
+				
+				<div id="formInputs">
+				<table>
+				<tr>
+					<td>
+						Cinema
+					</td>
+					<td>	
+						<select id="cinema" name="cinema" onChange="selectAdd(this.id,'day')">
+							<option value=""> </option>
+							<option value="maxima">Maxima</option>
+							<option value="rivola">Rivola</option>
+						</select>
+					</td>					
+				</tr>
+				
+				<tr>
+					<td>
+						Day
+					</td>
+					<td>
+						<select id="day" name="day" onChange="selectAdd2('cinema',this.id,'time');calculate()">
+							
+						</select>
+					</td>	
+				</tr>
+				
+				
+				<tr>
+					<td>
+						Time
+					</td>
+					<td>
+						<select id="time" name="time" onChange="calculate()">
+							
+						</select>
+					</td>
+				</tr>
+				</table>
+				</div>
+				
+				<hr/>
+				<h1>Seating</h1>
+				
+				<div id="formInputs2">
+				<table>
+				<tr>
+					<td>
+						Full
+					</td>
+					<td>
+						<input name="adult" id="adult" class="seating" type="number" min="1" max="40" onChange="calculate()">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Concession
+					</td>
+					<td>
+						<input name="concession" id="concession" class="seating" type="number" min="1" max="40" onChange="calculate()">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Child
+					</td>
+					<td>
+						<input name="child" id="child" class="seating" type="number" min="1" max="40" onChange="calculate()">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						FirsClass-Adult
+					</td>
+					<td>
+						<input name="fcAdult" id="fcAdult" class="seating" type="number" min="1" max="12" onChange="calculate()">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						FirstClass-Child
+					</td>
+					<td>
+						<input name="fcChild" id="fcChild" class="seating" type="number" min="1" max="12" onChange="calculate()">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Beanbag
+					</td>
+					<td>
+						<input name="beanbag" id="beanbag" class="seating" type="number" min="1" max="13" onChange="calculate()">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Price
+					</td>
+					<td>
+						<input type="text" id="price" name="price" readonly value="$0" >
+					</td>
+				</tr>
+				</table>
+				</div>
+				
+
+				
+				<input id="bookButton" type="submit" value="Book!">
+			</form>
+		</div>
+			
+			
+		<div id="footer">
+			<footer> 
+				&copy; Thomas Ly 2014 s3432552
+				<a href = "http://www.facebook.com" target="_blank"> <img src="http://cultureslurp.com/wp-content/uploads/2011/09/Facebook-Like-Button.jpg" alt='Facebook' /></a>
+				<a href="http://validator.w3.org/check?uri=referer"><img 
+				src="http://www.w3.org/html/logo/downloads/HTML5_Logo_32.png" alt="HTML Validator" /></a>
+				 <a href="http://jigsaw.w3.org/css-validator/check/referer"><img 
+				src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Validator"/></a>
+			</footer>
+		</div>
+	</div>
+		
+		
+		
+	
+	</body>
+	
+</html>
